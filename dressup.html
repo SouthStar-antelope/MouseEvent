@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>换装游戏</title>
+    <style>
+        #menu div{
+            width: 80px;
+            height: auto;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            border: 1px solid darkgoldenrod;
+            float: left;
+            margin-top: 15px;
+        }
+        #menu div:hover {
+            color:dodgerblue;
+        }
+        #panda {
+            background: url("images/dressup/body.png") no-repeat;
+        }
+        #upper {
+            width: 350px;
+            height: 350px;
+            background-image: url("images/dressup/upper3.png");
+        }
+        #lower {
+            width: 350px;
+            height: 350px;
+            background-image: url("images/dressup/lower2.png");
+        }
+
+    </style>
+</head>
+<body>
+    <div id="panda">
+        <div id="upper">
+            <div id="lower"></div>
+        </div> 
+    </div>
+    <div id="menu">
+        <div id="suit" onclick="suit()">西装</div>
+        <div id="haihun" onclick="haihun()">海魂衫</div>
+        <div id="diaodai" onclick="diaodai()">小吊带</div>
+        <div id="chang" onclick="chang()">长裤</div>
+        <div id="duan" onclick="duan()">短裤</div>
+    </div>
+</body>
+<script>
+    function suit() {
+        document.getElementById("upper").style.backgroundImage = "url('images/dressup/upper1.png')"
+    }
+    function haihun() {
+        document.getElementById("upper").style.backgroundImage = "url('images/dressup/upper2.png')"
+    }
+    function diaodai() {
+        document.getElementById("upper").style.backgroundImage = "url('images/dressup/upper3.png')"
+    }
+    function chang() {
+        document.getElementById("lower").style.backgroundImage = "url('images/dressup/lower1.png')"
+    }
+    function duan() {
+        document.getElementById("lower").style.backgroundImage = "url('images/dressup/lower2.png')"
+    }
+</script>
+</html>
