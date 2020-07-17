@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html {
+            height:100%;
+            width:100%;
+            text-align: center;
+            font-size: 200px;
+        }
+    </style>
+    <script>
+        var num = 1;
+        function gogogo() {   
+            if (num%7==0 || num%10==7 || (parseInt(num/10))%10==7) {
+                document.body.innerHTML = "pass";
+            }
+            else {
+                document.body.innerHTML = num;
+            }
+            num ++;  
+        }
+    </script>
+</head>
+
+<body onclick="gogogo()">
+    
+</body>
+
+</html>
