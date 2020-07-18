@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人机对战</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="mine">
+            <h2>我的出招</h2>
+            <div id="myChoice">
+                <img src="images/animation.gif">
+            </div>
+            <div id="menu" onclick="computerResult()">
+                <input type="button" value="石头" onclick="rock()">
+                <input type="button" value="剪刀" onclick="scissors()">
+                <input type="button" value="布" onclick="paper()">
+            </div>
+        </div>
+        <div id="computer">
+            <h2>电脑的出招</h2>
+            <div id="computerChoice">
+                <img src="images/animation.gif" >
+            </div>
+        </div>
+    </div>
+    <div id="result"></div>
+    <script src="main.js"></script>
+</body>
+</html>
